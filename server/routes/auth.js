@@ -1,9 +1,8 @@
 const express = require('express')
 const router = express.Router();
-router.get('/api/signup',(req,res)=>{
-   res.jsonp({
-    data:'you hit signup endpoint'
-   }); 
-});
+
+// import controller 
+const {signup} = require('../controllers/auth')
+router.get('/api/signup',signup)
 
 module.exports = router;
