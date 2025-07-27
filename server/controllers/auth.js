@@ -1,5 +1,5 @@
 exports.signup=(req,res)=>{
-   res.jsonp({
+   res.json({
     data:'you hit signup endpoint yay from controllers'
    }); 
 };
