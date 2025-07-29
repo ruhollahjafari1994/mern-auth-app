@@ -22,6 +22,6 @@ exports.signup = async (req, res) => {
     console.error('Signup Error:', err);
     res.status(500).json({
       error: 'Error saving user in database. Try again.',
-    });
+    }); 
   }
 };
